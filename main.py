@@ -11,9 +11,9 @@ from texts import HELP_TEXT, ABOUT_TEXT
 # Follow on GitHub @BotCreator99
 
 # Update key and token 
-bot_token = os.environ.get("TOKEN", "")
-api_hash = os.environ.get("HASH", "")
-api_id = os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "5898734789:AAFk9ocnRyWg5YOJQ-GqkIeWpx3yRUEXmaE")
+api_hash = os.environ.get("HASH", "35142c1407be6264e68fb6bec5dcabd9")
+api_id = os.environ.get("ID", "27639102")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 
@@ -70,10 +70,10 @@ def send_start(client: pyrogram.client.Client,
                message: pyrogram.types.messages_and_media.message.Message):
   app.send_message(
     message.chat.id,
-    f"__👋 Hi **{message.from_user.mention}**, I am shareus bypasser bot, just send me any shareus links and i will you get you results.\n👉 More command use :- /help /about\n This bot power by @TnlinkBypasserBot",
+    f"__👋 Hi **{message.from_user.mention}**, I am shareus bypasser bot, just send me any shareus links and i will you get you results.\n👉 More command use :- /help /about\n This bot power by @VJ_Movie_Search_Bot",
     reply_markup=InlineKeyboardMarkup([[
       InlineKeyboardButton(
-        "❤ Update Chanel", url="https://t.me/BotMinister")
+        "❤ Update Chanel", url="https://t.me/VJ_Bots")
     ]]),
     reply_to_message_id=message.id)
 
